@@ -2,3 +2,9 @@
     width: fit-content;
     height: 100%;
 }
+
+.picture-home {
+    padding: 1vh;
+    width: 15vh;
+    height: 15vh;
+}
