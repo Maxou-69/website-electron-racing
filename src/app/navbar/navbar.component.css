@@ -1,10 +1,11 @@
 .navbar {
-    width: 15vh;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #0f0f11;
 }
 
 .button {
     padding: 3vh;
+    text-decoration: none;
+    color: darkgrey;
 }
