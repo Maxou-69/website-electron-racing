@@ -1,10 +1,29 @@
 .home-main {
-    width: fit-content;
+
     height: 100%;
 }
 
 .picture-home {
     padding: 1vh;
-    width: 15vh;
-    height: 15vh;
+    width: 50vh;
+    height: 50vh;
+}
+
+.next {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 1vh;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
