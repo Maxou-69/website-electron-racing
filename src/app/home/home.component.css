@@ -29,3 +29,15 @@
     flex-direction: column;
     padding: 3vh;
 }
+
+
+@keyframes reveal {
+    from {
+        transform: translateY(25px)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
