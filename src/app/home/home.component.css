@@ -1,5 +1,5 @@
 .home-main {
-
+    background: url("../../assets/logo_1.webp") center/80% no-repeat;
     height: 100%;
 }
 
@@ -22,8 +22,10 @@
 }
 
 .page {
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding: 3vh;
 }
