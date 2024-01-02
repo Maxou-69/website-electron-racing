@@ -22,6 +22,6 @@ export class NavbarComponent {
       title: "Design",
       class: "button",
       redirect: "#",
-    },
+    }
   ]
 }
