@@ -7,5 +7,21 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+  buttonnav = [
+    {
+      title: "Actualité",
+      class: "button",
+      redirect: "#",
+    },
+    {
+      title: "Démarche",
+      class: "button",
+      redirect: "#",
+    },
+    {
+      title: "Design",
+      class: "button",
+      redirect: "#",
+    },
+  ]
 }

@@ -1,5 +1,5 @@
 <div class="navbar">
-    <div class="button_1"></div>
-    <div class="button_2"></div>
-    <div class="button_3"></div>
+    <a *ngFor="let button of buttonnav; let i = index" href="{{ button.redirect }}" class="{{button.class}}">
+        {{ button.title }}
+    </a>
 </div>
