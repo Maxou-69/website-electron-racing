@@ -1,4 +1,5 @@
 .home-main {
+    width: 169vh;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -6,10 +7,29 @@
     align-items: center;
 }
 
-.picture-home {
-    padding: 1vh;
-    width: 50vh;
-    height: 50vh;
+.slide {
+    height: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.slide.active {
+    display: flex;
+    opacity: 1 !important;
+
+}
+
+.slide.p1 {
+    background: url("../../assets/logo_1.webp") center/80% no-repeat;
+}
+
+.slide.p2,
+.slide.p3 {
+    opacity: 0;
+    overflow: hidden;
 }
 
 .next {
@@ -23,19 +43,6 @@
     display: inline-block;
     font-size: 3vh;
     margin: 2.5vh;
-}
-
-.slide {
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-}
-
-.slide.p1 {
-    background: url("../../assets/logo_1.webp") center/80% no-repeat;
 }
 
 @keyframes reveal {

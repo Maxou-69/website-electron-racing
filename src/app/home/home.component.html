@@ -1,7 +1,23 @@
 <div class="home-main">
     <!-- Slide 1 Home -->
-    <div class="slide p1">
+    <div class="slide p1" [class.active]="currentSlide === 1">
         <h1>Electron racing</h1>
+        <button class="next" type="button" (click)="nextSlide()">Suivant</button>
     </div>
-    <button class="next" type="button">Suivant</button>
+
+    <div class="slide p2" [class.active]="currentSlide === 2">
+        <div class="button_bar">
+            <p>2</p>
+            <button class="next" type="button" (click)="prevSlide()">Précédent</button>
+            <button class="next" type="button" (click)="nextSlide()">Suivant</button>
+        </div>
+    </div>
+
+    <div class="slide p3" [class.active]="currentSlide === 3">
+        <div class="button_bar">
+            <p>3</p>
+            <button class="next" type="button" (click)="prevSlide()">Précédent</button>
+            <button class="next" type="button" (click)="nextSlide()">Suivant</button>
+        </div>
+    </div>
 </div>
