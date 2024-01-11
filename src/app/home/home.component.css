@@ -1,5 +1,5 @@
 .home-main {
-    width: 169vh;
+    min-width: 200vh;
     height: 100%;
     display: flex;
     flex-direction: column;
