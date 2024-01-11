@@ -22,6 +22,13 @@ export class NavbarComponent {
       title: "Design",
       class: "button",
       redirect: "#",
+
+    },
+    {
+      title: "Sponsor",
+      class: "button",
+      redirect: "#",
+
     }
   ]
 }
