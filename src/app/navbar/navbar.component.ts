@@ -19,6 +19,11 @@ export class NavbarComponent {
       redirect: "#",
     },
     {
+      title: "L'équipe",
+      class: "button",
+      redirect: "#",
+    },
+    {
       title: "Design",
       class: "button",
       redirect: "#",
