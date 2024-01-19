@@ -6,7 +6,8 @@
     </div>
 
     <div class="slide p2" [class.active]="currentSlide === 2">
-        <img src="../../assets/voiture.webp" class="img">
+        <img src="../../assets/voiture.webp" class="img" alt="dessin de notre voiture vu de face">
+        <p class="subtilte-picture">Dessin technique de notre voiture Er-MK1 (ancienne version) ©</p>
         <p class="text-2">Bienvenue dans l'univers palpitant d'Electron Racing, l'équipe F1 in Schools originaire de la
             magnifique
             ville de Lyon !<br>
@@ -38,8 +39,9 @@
     </div>
 
     <div class="slide p3" [class.active]="currentSlide === 3">
+        <img src="../../assets/photo-equipe.webp" class="img_2" alt="Photo officiel de l'équipe">
+        <p class="subtilte-picture">Photo officiel de l'équipe</p>
         <div class="button_bar">
-            <p>3</p>
             <button class="next" type="button" (click)="prevSlide()">Précédent</button>
             <button class="next" type="button" (click)="nextSlide()">Suivant</button>
         </div>
