@@ -53,6 +53,11 @@
     text-align: center;
 }
 
+.link {
+    text-decoration: none;
+    text-align: center;
+}
+
 .slide.p3 {
     opacity: 0;
     overflow: hidden;
