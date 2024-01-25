@@ -1,7 +1,10 @@
 <div class="home-main">
     <!-- Slide 1 Home -->
     <div class="slide p1" [class.active]="currentSlide === 1">
-        <h1>Electron racing</h1>
+        <div class="title-p1">
+            <h1 class="title-p1">Electron racing</h1>
+            <h2 class="title-p1">L'innovation est notre motivation</h2>
+        </div>
         <button class="next" type="button" (click)="nextSlide()">Suivant</button>
     </div>
 
@@ -34,9 +37,17 @@
     <div class="slide p3" [class.active]="currentSlide === 3">
         <img src="../../assets/photo-equipe.webp" class="img_2" alt="Photo officiel de l'équipe">
         <p class="subtilte-picture">Photo officiel de l'équipe</p>
+        <h1>L'innovation est notre motivation</h1>
+        <p class="text-2">
+
+            Rejoignez-nous dans cette incroyable aventure. Contacter <a class="link"
+                href="mailto: contact@electron-racing.fr">contact&#64;electron-racing.fr</a> pour toutes
+            demandes
+            de
+            partenariat.
+        </p>
         <div class="button_bar">
             <button class="next" type="button" (click)="prevSlide()">Précédent</button>
-            <button class="next" type="button" (click)="nextSlide()">Suivant</button>
         </div>
     </div>
 </div>

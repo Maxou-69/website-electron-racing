@@ -27,6 +27,12 @@
     background: url("../../assets/logo_1.webp") center/80% no-repeat;
 }
 
+.title-p1 {
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
 .slide.p2 {
     opacity: 0;
     overflow: hidden;
@@ -39,7 +45,7 @@
 
 .img_2 {
     margin-top: 1vh;
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 
