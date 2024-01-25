@@ -9,9 +9,14 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   buttonnav = [
     {
+      title: "Accueil",
+      class: "button",
+      redirect: "./home",
+    },
+    {
       title: "Actualité",
       class: "button",
-      redirect: "#",
+      redirect: "./news",
     },
     {
       title: "Démarche",
