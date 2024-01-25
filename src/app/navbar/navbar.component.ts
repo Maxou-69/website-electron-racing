@@ -11,7 +11,7 @@ export class NavbarComponent {
     {
       title: "Accueil",
       class: "button",
-      redirect: "./home",
+      redirect: "./",
     },
     {
       title: "Actualité",

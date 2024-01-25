@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-declare function design(): void;
+
 
 @Component({
   selector: 'app-design',
@@ -10,7 +10,5 @@ declare function design(): void;
   styleUrl: './design.component.css'
 })
 export class DesignComponent {
-  constructor() {
-    design();
-  }
+
 }
