@@ -21,24 +21,30 @@ export class NavbarComponent {
     {
       title: "Démarche",
       class: "button",
-      redirect: "#",
+      redirect: "./process",
     },
     {
       title: "L'équipe",
       class: "button",
-      redirect: "#",
+      redirect: "./team",
     },
     {
       title: "Design",
       class: "button",
-      redirect: "#",
+      redirect: "./design",
 
     },
     {
       title: "Sponsor",
       class: "button",
-      redirect: "#",
+      redirect: "./sponsor",
 
-    }
+    },
+    {
+      title: "Contact",
+      class: "button",
+      redirect: "./contact",
+
+    },
   ]
 }
