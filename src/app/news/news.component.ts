@@ -9,5 +9,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './news.component.css'
 })
 export class NewsComponent {
+  divcomponent = [
+    {
+      picture: "",
+      picturealt: "",
+      paragraph: "",
+    },
 
+  ]
+  OpenModal() { }
 }
