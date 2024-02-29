@@ -21,3 +21,11 @@
     width: 40vw;
     text-align: center;
 }
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 1vh;
+}
