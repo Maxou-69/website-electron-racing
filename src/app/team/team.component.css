@@ -12,7 +12,7 @@
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -20,12 +20,18 @@
 .card {
     width: 40vw;
     text-align: center;
+    margin: 1vh 1vw 1vh 1vw;
 }
 
-.card-row {
+.card_row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
     margin: 1vh;
+}
+
+.picture {
+    width: 25vw;
+    height: 50vh;
 }
