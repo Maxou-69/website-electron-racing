@@ -3,10 +3,16 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "baseUrl": ".",
+    "types": [],
+    "paths": {
+      "three": ["node_modules/three/build/three.module.d.ts"],
+      "three/examples/jsm/*": ["node_modules/three/examples/jsm/*"]
+    }
   },
   "files": [
-    "src/main.ts"
+    "src/main.ts",
+    "src/polyfills.ts"
   ],
   "include": [
     "src/**/*.d.ts"
