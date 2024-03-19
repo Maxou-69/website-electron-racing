@@ -1,21 +1,46 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalComponent } from './modal.component';
 
 @Component({
   selector: 'app-news',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './news.component.html',
-  styleUrl: './news.component.css'
+  template: `
+    <div class="news_main">
+      <div *ngFor="let div of divcomponent; let i = index" class="div">
+        <img class="img" [src]="div.picture" [alt]="div.picturealt">
+        <p class="news_paragraph">{{ div.paragraph }}</p>
+        <button class="modal_button" type="button" (click)="openModal(div)">Plus d'info</button>
+      </div>
+    </div>
+  `,
+  styleUrls: ['./news.component.css'],
 })
 export class NewsComponent {
   divcomponent = [
     {
-      picture: "",
-      picturealt: "",
-      paragraph: "",
+      title: 'Article 1',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      picture: "../../assets/logo_1.webp",
+      picturealt: 'Article 1',
     },
+    {
+      title: 'Article 2',
+      content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      picture: '../../assets/logo_1.webp',
+      picturealt: 'Article 2',
+    },
+  ];
 
-  ]
-  OpenModal() { }
+  constructor(private dialog: MatDialog) {}
+
+  openModal(data: any): void {
+    const dialogRef = this.dialog.open(ModalComponent, {
+      width: '250px',
+      data: data,
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
 }
