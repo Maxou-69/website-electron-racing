@@ -6,9 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
   providers: [
     provideAnimationsAsync()
