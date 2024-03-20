@@ -24,7 +24,7 @@ export class NavbarComponent {
       redirect: "./process",
     },
     {
-      title: "L'équipe",
+      title: "Notre équipe",
       class: "button",
       redirect: "./team",
     },
@@ -35,7 +35,7 @@ export class NavbarComponent {
 
     },
     {
-      title: "Sponsor",
+      title: "Sponsors",
       class: "button",
       redirect: "./sponsor",
 

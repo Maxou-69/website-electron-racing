@@ -9,8 +9,13 @@
     </div>
 
     <div class="slide p2" [class.active]="currentSlide === 2">
+        <!-- <div> -->
         <img src="../../assets/voiture.webp" class="img" alt="dessin de notre voiture vu de face">
         <p class="subtilte-picture">Dessin technique de notre voiture Er-MK1 (ancienne version) ©</p>
+        <!--Séparer les deux éléments en les mettant dans des div différentes, 
+            permet de mettre des photos en arrière-plan par ex.-->
+        <!-- </div> -->
+        <!-- <div> -->
         <p class="text-2">Bienvenue dans l'univers palpitant d'Electron Racing, l'équipe F1 in Schools originaire de la
             magnifique
             ville de Lyon !<br>
@@ -27,6 +32,7 @@
             atteindre de nouveaux sommets dans le monde exaltant de F1 in Schools.</p>
         <a href="https://f1inschools.fr/" target="_blank" class="link">Plus d'information sur la compétition f1 in
             school</a>
+        <!-- </div> -->
         <div class="button_bar">
             <button class="next" type="button" (click)="prevSlide()">Précédent</button>
             <button class="next" type="button" (click)="nextSlide()">Suivant</button>
@@ -35,13 +41,14 @@
 
     <div class="slide p3" [class.active]="currentSlide === 3">
         <img src="../../assets/photo-equipe.webp" class="img_2" alt="Photo officiel de l'équipe">
-        <p class="subtilte-picture">Photo officiel de l'équipe</p>
+        <p class="subtilte-picture">Photo officielle de l'équipe</p>
         <h1>L'innovation est notre motivation</h1>
+        <!--Euh tu vas vite me changer ce slogan et me trouver un truc qui claque ok ??-->
         <p class="text-2">
 
             Rejoignez-nous dans cette incroyable aventure. Contacter <a class="link"
-                href="mailto: contact@electron-racing.fr">contact&#64;electron-racing.fr</a> pour toutes
-            demandes.
+                href="mailto: contact@electron-racing.fr">contact&#64;electron-racing.fr</a> pour toute
+            demande.
         </p>
         <div class="button_bar">
             <button class="next" type="button" (click)="prevSlide()">Précédent</button>
