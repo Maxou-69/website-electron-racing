@@ -4,11 +4,17 @@
     padding-right: 1vw;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 
+.div{
+    background-color: darkgrey;
+    border:solid 1vh;
+    padding: 1vh 2vw;
+    text-align: center;
+}
 .modal_button {
     background-color: #ff0000;
     border: none;
