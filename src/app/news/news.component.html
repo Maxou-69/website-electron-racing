@@ -1,14 +1,12 @@
 <!-- TO DO: Better CSS, better content management, intégrer les storys insta directement dans le site -->
 <div class="news_main">
-  <div class="row">
-    <div class="row news">
-      <div *ngFor="let div of divcomponent; let i = index" class="div">
-        <img class="img" [src]="div.picture" [alt]="div.picturealt" />
-        <p class="news_paragraph">{{ div.content_text }}</p>
-        <button class="modal_button" type="button" (click)="openModal(div)">
-          Plus d'info
-        </button>
-      </div>
+  <div class="row news">
+    <div *ngFor="let div of divcomponent; let i = index" class="div">
+      <img class="img" [src]="div.picture" [alt]="div.picturealt" />
+      <p class="news_paragraph">{{ div.content_text }}</p>
+      <button class="modal_button" type="button" (click)="openModal(div)">
+        Plus d'info
+      </button>
     </div>
   </div>
 </div>
