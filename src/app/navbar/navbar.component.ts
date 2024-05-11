@@ -1,50 +1,31 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
   buttonnav = [
     {
-      title: "Accueil",
-      class: "button",
-      redirect: "./",
+      title: 'Accueil',
+      class: 'button',
+      redirect: './',
     },
     {
-      title: "Actualité",
-      class: "button",
-      redirect: "./news",
+      title: 'Notre équipe',
+      class: 'button',
+      redirect: './team',
     },
     {
-      title: "Démarche",
-      class: "button",
-      redirect: "./process",
+      title: 'Design',
+      class: 'button',
+      redirect: './design',
     },
     {
-      title: "Notre équipe",
-      class: "button",
-      redirect: "./team",
+      title: 'Sponsors',
+      class: 'button',
+      redirect: './sponsor',
     },
-    {
-      title: "Design",
-      class: "button",
-      redirect: "./design",
-
-    },
-    {
-      title: "Sponsors",
-      class: "button",
-      redirect: "./sponsor",
-
-    },
-    {
-      title: "Contact",
-      class: "button",
-      redirect: "./contact",
-
-    },
-  ]
+  ];
 }
